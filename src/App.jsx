@@ -1,12 +1,14 @@
-import { RouteMain } from "./routes"
+import { AuthProviders } from "./providers/providers";
+import { RouteMain } from "./routes";
 
 function App() {
-
   return (
     <div>
-      <RouteMain />
+      <AuthProviders>
+        <RouteMain />
+      </AuthProviders>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
